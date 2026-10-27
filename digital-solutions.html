@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asthel Digital Solutions — Web, Apps, AI & 3D</title>
+<meta name="description" content="Asthel Digital Solutions: Web Development, Mobile Apps, UI/UX, Digital Marketing, Cloud, Custom AI Software, AI Solutions, AI Websites, and 3D Websites.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.svg">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<!-- 3D CANVAS (Background) -->
+<canvas id="hero-canvas"></canvas>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <a href="index.html">
+      <svg viewBox="0 0 400 100" height="40">
+        <polygon points="40,20 60,50 40,80 20,50" fill="none" stroke="#D4AF37" stroke-width="3"/>
+        <polygon points="40,35 50,50 40,65 30,50" fill="#D4AF37"/>
+        <text x="75" y="42" font-family="Georgia, serif" font-weight="bold" font-size="30" fill="#D4AF37" letter-spacing="2">ASTHEL</text>
+        <text x="75" y="68" font-family="Arial, sans-serif" font-size="14" fill="#F5F5F7" letter-spacing="7">GROUP</text>
+      </svg>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#businesses">Businesses</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="digital-solutions.html" class="active">Digital Solutions</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="min-height: 80vh; padding-top: 140px;">
+  <div class="hero-content">
+    <div class="hero-tagline">ASTHEL DIGITAL SOLUTIONS</div>
+    <h1 class="hero-title">Innovative Tech.<br><span class="gold">Real Results.</span></h1>
+    <p class="hero-sub">From custom AI software and high-performance mobile apps to immersive 3D websites — we build the digital future of your business.</p>
+    <div class="hero-btns">
+      <a href="#services" class="btn btn-gold">View Our Services</a>
+      <a href="#contact" class="btn btn-outline">Start a Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section businesses">
+  <div class="section-head">
+    <div class="section-tag">WHAT WE DO</div>
+    <h2>World-Class <span class="gold">Services</span></h2>
+    <p>We deliver end-to-end digital solutions engineered to scale your business.</p>
+  </div>
+  
+  <div class="biz-grid">
+    <!-- 9 Services -->
+    <div class="biz-card live">
+      <div class="biz-icon">⌨</div>
+      <h3>Web Development</h3>
+      <p>Lightning-fast, SEO-optimized websites and web apps built with modern frameworks.</p>
+    </div>
+    
+    <div class="biz-card live">
+      <div class="biz-icon">📱</div>
+      <h3>Mobile Apps</h3>
+      <p>Native and cross-platform iOS & Android apps that offer seamless user experiences.</p>
+    </div>
+    
+    <div class="biz-card live">
+      <div class="biz-icon">✦</div>
+      <h3>UI/UX Design</h3>
+      <p>Stunning, user-centric interfaces designed to convert visitors into loyal customers.</p>
+    </div>
+    
+    <div class="biz-card live">
+      <div class="biz-icon">📈</div>
+      <h3>Digital Marketing</h3>
+      <p>Data-driven SEO, social media, and ad campaigns that deliver measurable ROI.</p>
+    </div>
+    
+    <div class="biz-card live">
+      <div class="biz-icon">☁</div>
+      <h3>Cloud Solutions</h3>
+      <p>Secure, scalable cloud infrastructure and DevOps to keep your business running 24/7.</p>
+    </div>
+    
+    <div class="biz-card live">
+      <div class="biz-icon">🧠</div>
+      <h3>Custom AI Software</h3>
+      <p>Bespoke AI tools, chatbots, and machine learning models tailored to your business logic.</p>
+    </div>
+    
+    <div class="biz-card live">
+      <div class="biz-icon">⚡</div>
+      <h3>AI Solutions</h3>
+      <p>Integrating powerful AI APIs to automate workflows and supercharge productivity.</p>
+    </div>
+    
+    <div class="biz-card live">
+      <div class="biz-icon">🌐</div>
+      <h3>AI Websites</h3>
+      <p>Smart websites with built-in AI generation, dynamic personalization, and intelligent search.</p>
+    </div>
+    
+    <div class="biz-card live">
+      <div class="biz-icon">🧊</div>
+      <h3>3D Websites</h3>
+      <p>Immersive WebGL and Three.js experiences that make your brand unforgettable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section about">
+  <div class="about-grid">
+    <div class="about-left">
+      <div class="section-tag">WHY CHOOSE US</div>
+      <h2>We don't just build.<br>We <span class="gold">engineer.</span></h2>
+      <p>Asthel Digital Solutions is the flagship tech arm of Asthel Group. We combine deep engineering expertise with premium design to build products that don't just look good — they perform.</p>
+      <p>Based in Hajipur, Bihar, we serve clients globally with the agility of a startup and the quality of an enterprise agency.</p>
+    </div>
+    <div class="about-right">
+      <div class="about-card">
+        <div class="about-card-icon">◈</div>
+        <h4>Future-Proof Tech</h4>
+        <p>We build with AI, 3D, and modern stacks so your product stays relevant for years.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">◉</div>
+        <h4>Premium Quality</h4>
+        <p>From pixel-perfect UI to optimized backend logic, we never compromise on standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="section-head">
+    <div class="section-tag">START A PROJECT</div>
+    <h2>Let's Build Something <span class="gold">Great.</span></h2>
+    <p>Tell us about your idea. We will get back to you within 24 hours.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">✉</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <a href="mailto:astheldigitalsolutions@gmail.com">astheldigitalsolutions@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">☎</div>
+        <div>
+          <div class="contact-label">WhatsApp</div>
+          <a href="https://wa.me/918893732114" target="_blank">+91 88937 32114</a>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="handleForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Project Subject" required>
+      <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
+      <button type="submit" class="btn btn-gold">Request a Quote</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <svg viewBox="0 0 400 100" height="40">
+        <polygon points="40,20 60,50 40,80 20,50" fill="none" stroke="#D4AF37" stroke-width="3"/>
+        <polygon points="40,35 50,50 40,65 30,50" fill="#D4AF37"/>
+        <text x="75" y="42" font-family="Georgia, serif" font-weight="bold" font-size="30" fill="#D4AF37" letter-spacing="2">ASTHEL</text>
+        <text x="75" y="68" font-family="Arial, sans-serif" font-size="14" fill="#F5F5F7" letter-spacing="7">GROUP</text>
+      </svg>
+      <p class="footer-tag">Building Tomorrow, Digitally.</p>
+    </div>
+    <div>
+      <h5>Businesses</h5>
+      <a href="digital-solutions.html">Asthel Digital Solutions</a>
+      <a href="#">Business Two (Soon)</a>
+      <a href="#">Business Three (Soon)</a>
+      <a href="#">Business Four (Soon)</a>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <a href="index.html#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <a href="mailto:astheldigitalsolutions@gmail.com">astheldigitalsolutions@gmail.com</a>
+      <a href="https://wa.me/918893732114">+91 88937 32114</a>
+      <span>Hajipur, Bihar</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 Asthel Group. All rights reserved. | Hajipur, Bihar, India
+  </div>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/918893732114?text=Hi%20Asthel%20Digital%20Solutions,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.8 6.3L4 29l7.9-1.7c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22c-2 0-3.9-.5-5.5-1.5l-.4-.2-4.7 1 1-4.6-.3-.4C5 18 4.4 16.6 4.4 15c0-6.4 5.2-11.6 11.6-11.6S27.6 8.6 27.6 15 22.4 25 16 25zm6.3-8.7c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.8.6.8.3 1.5.2 2 .1.6-.1 2-1 2.3-1.9.3-.9.3-1.7.2-1.9-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asthel Group — Building Tomorrow, Digitally</title>
+<meta name="description" content="Asthel Group — a multi-business enterprise. Asthel Digital Solutions: Web Dev, Mobile Apps, AI, 3D Websites & more. Based in Hajipur, Bihar.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.svg">
+<!-- Three.js & GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-logo">
+    <svg viewBox="0 0 100 100" width="80" height="80">
+      <polygon points="50,10 75,50 50,90 25,50" fill="none" stroke="#D4AF37" stroke-width="3">
+        <animate attributeName="stroke-dasharray" from="0 300" to="300 0" dur="1.5s" fill="freeze"/>
+      </polygon>
+      <polygon points="50,30 62,50 50,70 38,50" fill="#D4AF37"/>
+    </svg>
+  </div>
+  <div class="loader-text">ASTHEL GROUP</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- 3D CANVAS (Hero background) -->
+<canvas id="hero-canvas"></canvas>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <svg viewBox="0 0 400 100" height="40">
+      <polygon points="40,20 60,50 40,80 20,50" fill="none" stroke="#D4AF37" stroke-width="3"/>
+      <polygon points="40,35 50,50 40,65 30,50" fill="#D4AF37"/>
+      <text x="75" y="42" font-family="Georgia, serif" font-weight="bold" font-size="30" fill="#D4AF37" letter-spacing="2">ASTHEL</text>
+      <text x="75" y="68" font-family="Arial, sans-serif" font-size="14" fill="#F5F5F7" letter-spacing="7">GROUP</text>
+    </svg>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#businesses">Businesses</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="digital-solutions.html">Digital Solutions</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-tagline">ASTHEL GROUP</div>
+    <h1 class="hero-title">Building Tomorrow,<br><span class="gold">Digitally.</span></h1>
+    <p class="hero-sub">A multi-business enterprise powering digital transformation across industries — from AI solutions to 3D experiences.</p>
+    <div class="hero-btns">
+      <a href="#businesses" class="btn btn-gold">Explore Our Businesses</a>
+      <a href="digital-solutions.html" class="btn btn-outline">Asthel Digital Solutions →</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- BUSINESSES -->
+<section id="businesses" class="section businesses">
+  <div class="section-head">
+    <div class="section-tag">OUR PORTFOLIO</div>
+    <h2>Four Businesses. <span class="gold">One Vision.</span></h2>
+    <p>Asthel Group operates across multiple frontiers — each business engineered to solve real problems.</p>
+  </div>
+  <div class="biz-grid">
+    <!-- Business 1 — LIVE -->
+    <a href="digital-solutions.html" class="biz-card live">
+      <div class="biz-icon">◆</div>
+      <div class="biz-num">01</div>
+      <h3>Asthel Digital Solutions</h3>
+      <p>Web Development, Mobile Apps, AI Solutions, 3D Websites & Digital Marketing.</p>
+      <div class="biz-status live-status">● LIVE</div>
+      <div class="biz-link">Explore →</div>
+    </a>
+    <!-- Business 2 -->
+    <div class="biz-card soon">
+      <div class="biz-icon">◇</div>
+      <div class="biz-num">02</div>
+      <h3>Business Two</h3>
+      <p>Coming Soon — Details to be revealed by the CEO.</p>
+      <div class="biz-status">○ COMING SOON</div>
+    </div>
+    <!-- Business 3 -->
+    <div class="biz-card soon">
+      <div class="biz-icon">◇</div>
+      <div class="biz-num">03</div>
+      <h3>Business Three</h3>
+      <p>Coming Soon — Details to be revealed by the CEO.</p>
+      <div class="biz-status">○ COMING SOON</div>
+    </div>
+    <!-- Business 4 -->
+    <div class="biz-card soon">
+      <div class="biz-icon">◇</div>
+      <div class="biz-num">04</div>
+      <h3>Business Four</h3>
+      <p>Coming Soon — Details to be revealed by the CEO.</p>
+      <div class="biz-status">○ COMING SOON</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="about-grid">
+    <div class="about-left">
+      <div class="section-tag">ABOUT ASTHEL GROUP</div>
+      <h2>Built in <span class="gold">Hajipur.</span><br>Built for the <span class="gold">World.</span></h2>
+      <p>Asthel Group is a multi-business enterprise headquartered in Hajipur, Bihar — near Anjanpeer. We began with a single conviction: that world-class digital solutions can be built from anywhere.</p>
+      <p>Today, Asthel Group operates four businesses spanning digital services, AI, and beyond. Our flagship — <strong>Asthel Digital Solutions</strong> — delivers web development, mobile apps, AI software, and immersive 3D websites to clients across India.</p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num">4</span><span class="stat-lbl">Businesses</span></div>
+        <div class="stat"><span class="stat-num">9+</span><span class="stat-lbl">Services</span></div>
+        <div class="stat"><span class="stat-num">1</span><span class="stat-lbl">Vision</span></div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-card">
+        <div class="about-card-icon">◈</div>
+        <h4>Our Mission</h4>
+        <p>To bring premium, AI-powered digital solutions to businesses of every size — without compromise.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">◉</div>
+        <h4>Our Vision</h4>
+        <p>To grow Asthel Group into a multi-industry powerhouse rooted in innovation and integrity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="section-head">
+    <div class="section-tag">GET IN TOUCH</div>
+    <h2>Let's Build <span class="gold">Together.</span></h2>
+    <p>Have a project in mind? Reach out — we respond within 24 hours.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">✉</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <a href="mailto:astheldigitalsolutions@gmail.com">astheldigitalsolutions@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">☎</div>
+        <div>
+          <div class="contact-label">WhatsApp</div>
+          <a href="https://wa.me/918893732114" target="_blank">+91 88937 32114</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">⌖</div>
+        <div>
+          <div class="contact-label">Main Office</div>
+          <span>Hajipur, Bihar — Near Anjanpeer</span>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="handleForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
+      <button type="submit" class="btn btn-gold">Send Message</button>
+      <p class="form-note">Or email directly: astheldigitalsolutions@gmail.com</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <svg viewBox="0 0 400 100" height="40">
+        <polygon points="40,20 60,50 40,80 20,50" fill="none" stroke="#D4AF37" stroke-width="3"/>
+        <polygon points="40,35 50,50 40,65 30,50" fill="#D4AF37"/>
+        <text x="75" y="42" font-family="Georgia, serif" font-weight="bold" font-size="30" fill="#D4AF37" letter-spacing="2">ASTHEL</text>
+        <text x="75" y="68" font-family="Arial, sans-serif" font-size="14" fill="#F5F5F7" letter-spacing="7">GROUP</text>
+      </svg>
+      <p class="footer-tag">Building Tomorrow, Digitally.</p>
+    </div>
+    <div>
+      <h5>Businesses</h5>
+      <a href="digital-solutions.html">Asthel Digital Solutions</a>
+      <a href="#">Business Two (Soon)</a>
+      <a href="#">Business Three (Soon)</a>
+      <a href="#">Business Four (Soon)</a>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="digital-solutions.html">Services</a>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <a href="mailto:astheldigitalsolutions@gmail.com">astheldigitalsolutions@gmail.com</a>
+      <a href="https://wa.me/918893732114">+91 88937 32114</a>
+      <span>Hajipur, Bihar</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 Asthel Group. All rights reserved. | Hajipur, Bihar, India
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/918893732114?text=Hi%20Asthel%20Group,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.8 6.3L4 29l7.9-1.7c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22c-2 0-3.9-.5-5.5-1.5l-.4-.2-4.7 1 1-4.6-.3-.4C5 18 4.4 16.6 4.4 15c0-6.4 5.2-11.6 11.6-11.6S27.6 8.6 27.6 15 22.4 25 16 25zm6.3-8.7c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.8.6.8.3 1.5.2 2 .1.6-.1 2-1 2.3-1.9.3-.9.3-1.7.2-1.9-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
